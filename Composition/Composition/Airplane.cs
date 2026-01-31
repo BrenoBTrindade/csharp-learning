@@ -1,30 +1,27 @@
 ﻿namespace Airline
 {
     // =========================
-    // CLASSE Airplane
+    // CLASSE BASE (HERANÇA)
     // =========================
-    // Representa um avião.
-    // Essa classe é "simples" e independente.
-    // Ela NÃO depende de Flight.
+    // Airplane é a "classe pai" (base class).
+    // Ela contém o que TODO avião tem em comum.
     public class Airplane
     {
-        // Campo que guarda o prefixo do avião (ex: PR-ABC)
-        public string prefix;
+        // Propriedade pública (leitura) do prefixo.
+        // "get;" permite ler de fora, "private set;" impede alterar fora da classe.
+        public string Prefix { get; private set; }
 
-        // Construtor do avião
-        // Toda vez que criamos um Airplane, ele PRECISA de um prefixo
+        // Construtor da classe base.                                                                                                                                                                                                                                                                                                                                                                                           
+        // Todo Airplane precisa nascer com um Prefix.
         public Airplane(string prefix)
         {
-            // "this.prefix" refere-se ao campo da classe
-            // "prefix" refere-se ao parâmetro do construtor
-            this.prefix = prefix;
+            Prefix = prefix;
         }
 
-        // Método que calcula o custo do avião
-        // Aqui é apenas um valor fixo para exemplo
-        public double CalculateCost()
+        // Método virtual: permite que classes filhas sobrescrevam (override) se quiserem.
+        // Aqui está simples porque é apenas um exemplo.
+        public virtual double CalculateCost()
         {
             return 1200;
         }
     }
-}

@@ -1,41 +1,34 @@
 ﻿// =========================
-// CLASSE Flight
+// COMPOSIÇÃO (HAS-A)
 // =========================
-// Representa um voo.
-// Um voo TEM um avião → isso é COMPOSIÇÃO.
+// Flight "TEM UM" Airplane.
+// (relationship: HAS-A)
 using Airline;
 
 public class Flight
 {
-    // Identificador do voo
-    public string FlightId { get; set; }
+    public string FlightId { get; }
+    public double Distance { get; }
 
-    // Distância do voo
-    public double Distance;
+    // Aqui está a COMPOSIÇÃO:
+    // Um Flight contém uma referência para Airplane.
+    // E esse Airplane pode ser PassengerAirplane OU CargoAirplane.
+    public Airplane Airplane { get; set; }
 
-    // 👉 COMPOSIÇÃO ACONTECE AQUI 👇
-    // Flight TEM um Airplane
-    // Não é herança, é posse (has-a)
-    public Airplane Airplane;
-
-    // Construtor do voo
-    public Flight(string FlightId, double Distance)
+    public Flight(string flightId, double distance)
     {
-        // Atribui os valores recebidos
-        this.FlightId = FlightId;
-        this.Distance = Distance;
-
-        // Repare:
-        // O Airplane NÃO é criado aqui.
-        // Ele será associado depois.
+        FlightId = flightId;
+        Distance = distance;
     }
 
-    // Método do voo que calcula o custo
     public double CalculateCost()
     {
-        // Delegação:
-        // O voo não sabe calcular o custo sozinho,
-        // então ele pede para o avião calcular.
+        // Flight delega o cálculo para o Airplane (polimorfismo).
+        // Se Airplane for PassengerAirplane, chama o override dele.
+        // Se for CargoAirplane, chama o override dele.
+        if (Airplane == null)
+            throw new InvalidOperationException("Flight has no airplane assigned.");
+
         return Airplane.CalculateCost();
     }
 }
