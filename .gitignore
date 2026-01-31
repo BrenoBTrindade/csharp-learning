@@ -1,0 +1,22 @@
+﻿# =========================
+# Visual Studio / .NET
+# =========================
+
+# Visual Studio
+.vs/
+**/.vs/
+*.suo
+
+# Build artifacts
+bin/
+obj/
+**/bin/
+**/obj/
+
+# Rider / VS Code
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
