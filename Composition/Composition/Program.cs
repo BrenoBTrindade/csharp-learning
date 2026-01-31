@@ -23,4 +23,3 @@ public class MainClass
         Console.WriteLine($"{flightA.Airplane.Prefix} - {flightA.CalculateCost()}");
     }
 }
-}
