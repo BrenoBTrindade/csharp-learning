@@ -1,0 +1,14 @@
+C:\Users\breno\C#\Composition\Composition\obj\Debug\net10.0\Composition.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\breno\C#\Composition\Composition\obj\Debug\net10.0\Composition.AssemblyInfoInputs.cache
+C:\Users\breno\C#\Composition\Composition\obj\Debug\net10.0\Composition.AssemblyInfo.cs
+C:\Users\breno\C#\Composition\Composition\obj\Debug\net10.0\Composition.csproj.CoreCompileInputs.cache
+C:\Users\breno\C#\Composition\Composition\bin\Debug\net10.0\Composition.exe
+C:\Users\breno\C#\Composition\Composition\bin\Debug\net10.0\Composition.deps.json
+C:\Users\breno\C#\Composition\Composition\bin\Debug\net10.0\Composition.runtimeconfig.json
+C:\Users\breno\C#\Composition\Composition\bin\Debug\net10.0\Composition.dll
+C:\Users\breno\C#\Composition\Composition\bin\Debug\net10.0\Composition.pdb
+C:\Users\breno\C#\Composition\Composition\obj\Debug\net10.0\Composition.dll
+C:\Users\breno\C#\Composition\Composition\obj\Debug\net10.0\refint\Composition.dll
+C:\Users\breno\C#\Composition\Composition\obj\Debug\net10.0\Composition.pdb
+C:\Users\breno\C#\Composition\Composition\obj\Debug\net10.0\Composition.genruntimeconfig.cache
+C:\Users\breno\C#\Composition\Composition\obj\Debug\net10.0\ref\Composition.dll
